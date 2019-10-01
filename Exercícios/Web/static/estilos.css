@@ -1,0 +1,38 @@
+body{
+    background: #cccccc;
+}
+.cabecalho, .novo{
+    width: 60%;
+    margin: auto; 
+}
+.novo a{
+    text-transform: uppercase;
+    color: #0e3f07;
+    font-size: 0.875em;
+    background: #ffffff;
+    border: 1px solid #000000;
+    padding: 0.275em 1em;
+    text-decoration: none;
+}
+table{
+    width: 60%; /* calcula o tamanho da página e faz a tabela percentualmente proporcional*/
+    margin: 1em auto; 
+    border-collapse: collapse;
+}
+thead{
+    background: #000000;
+    color: #ffffff; /* cor da letra do título */
+}
+th{
+    height: 2em;
+    text-align: left;
+    padding: 0.5em 0 0 1em;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+td{
+    height: 1.5em;
+    padding: 0.5em 1em;
+    border: 1px solid #000000;
+    background: #ffffff;
+}

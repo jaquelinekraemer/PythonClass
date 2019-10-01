@@ -1,21 +1,27 @@
 <html>
     <head>
         <title>{{ nome }}</title>
+        <link rel="stylesheet" href="../static/estilos.css">
     </head>
     <body>
-        <h1>{{ nome }}</h1>
+        <div class="cabecalho">
+            <h1>{{ nome }}</h1>
+        </div>
+        <div class="novo">
+            <a href="/novo">Novo Aluno</a>
+        </div>
         <table>
             <thead>
                 <tr>
                     <th>Nome</th>
-                    <th>Telefone</th>
+                    <th>Telefone</th>                    
                 </tr>
             </thead>
             <tbody>
                 {% for a in lista %}
                 <tr>
-                    <td></td>
-                    <td></td>
+                    <td>{{ a.nome_completo() }}</td>
+                    <td>{{ a.Telefone }}</td>
                 </tr>
                 {% endfor %}
             </tbody>
