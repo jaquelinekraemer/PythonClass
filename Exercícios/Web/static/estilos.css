@@ -1,5 +1,9 @@
 body{
-    background: #94cafc;
+    /* background: #94cafc; */
+    background: url('jakedois.gif');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
 }
 .cabecalho, .novo{
     width: 60%;
@@ -17,9 +21,10 @@ body{
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    border-radius: 7px;
 }
 .novo a:hover{
-    background: #71e5fa;
+    background: #baecf5;
     color: #002763;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -32,22 +37,24 @@ table{
 thead{
     background: #000000;
     color: #ffffff; /* cor da letra do título */
-    border: 1px solid #000000;
+    border: #000000;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 th{
     height: 2em;
     text-align: left;
-    padding: 0.5em 0 0 1em;
+    padding: 0.5em 0.5em 0.5em 1em;
     text-transform: uppercase;
     font-size: 15px;
+    border-radius: 7px;
 }
 td{
     height: 1.5em;
     padding: 0.5em 1em;
-    border: 1px solid #000000;
+    border: #000000;
     font-family: Arial, Helvetica, sans-serif;
+    border-radius: 7px;
     /* background: #ffffff; */
 }
 tbody tr{
