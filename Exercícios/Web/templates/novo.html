@@ -1,15 +1,27 @@
 <html>
     <head>
         <tittle></tittle>
+        <link rel="stylesheet" href="../static/estilosdois.css">
     </head>
         <body>
+            <div class="cabecalho">
             <h1>Novo Aluno</h1>
-            <form action="/salvar" method="POST">
-                <label for="">Nome :</label><input type="text" name="nome"> <br/>                
-                <label for="">Sobrenome :</label><input type="text" name="sobrenome"><br/>                
-                <label for="">Telefone :</label><input type="text" name="telefone"><br/>                
-                <hr />
-                <input type="submit" value="Salvar">
+            </div>
+            <form action="/salvar" method="POST"> 
+                <div class="labels">
+                    <label for="">Nome:</label>
+                </div>
+                <input type="text" name="nome" class="text=box"> <br/>                
+                <div class="labels">
+                    <label for="">Sobrenome:</label>
+                </div>
+                <input type="text" name="sobrenome" class="text-box"><br/>                
+                <div class="labels">
+                    <label for="">Telefone:</label>
+                </div>
+                    <input type="text" name="telefone" class="text-box"><br/>                
+                    <hr />
+                <input type="submit" value="Salvar" class="btn_salvar">
             </form>
         </body>        
     </head>
