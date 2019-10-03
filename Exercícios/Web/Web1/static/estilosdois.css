@@ -1,5 +1,7 @@
 body{
-    background: #f1c3ad;
+    background: url('marceline.png');
+    background-repeat: no-repeat;
+    background-position: right;
 }
 .cabecalho{
     width: 20%;
@@ -11,9 +13,9 @@ body{
 form{
     width: 40%;
     margin: auto;
-    border: 2px solid #249907;
+    border: 2px solid #2579da;
     background: #dfe1e2;
-    padding: 1em 1em;
+    padding: 1em 3em 1em 4em;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -30,8 +32,13 @@ form{
     font-weight: bold;
     border-radius: 10px; 
 }
+.btn_salvar:hover{
+    background: #ffffff;
+    color: #000000;
+    cursor: pointer;
+}
 h1{
-    color: #276b46
+    color: #3c71c0;
 }
 .labels{
     width: 28%;
@@ -42,4 +49,5 @@ h1{
     margin: .5em .275em .5em .1em;
     width: 70%;
     display: inline-block;
+    border-radius: 7px;
 }
