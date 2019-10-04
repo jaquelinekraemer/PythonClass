@@ -10,35 +10,30 @@
 cad_usuario = []
 cad_senha = []
 opcao = 0
-  
-print('''MENU
-[1] Cadastrar usuário e senha
-[2] Exibir usuários e senhas cadastradas
-[3] Fazer login
-[4] Sair do programa''')
 
-opcao = int(input('Selecione uma opção do MENU: '))
 
 while opcao != 4:
+
+    print('''MENU
+    [1] Cadastrar usuário e senha
+    [2] Exibir usuários e senhas cadastradas
+    [3] Fazer login
+    [4] Sair do programa''')
+
+    opcao = int(input('Selecione uma opção do MENU: '))
 
     if opcao == 1:
         cad_usuario.append(input('Informe o seu usuário: '))
         cad_senha.append(input('Informe a sua senha: '))
-        print('Os usuários e as suas respectivas senhas cadastradas são: \n Usuário: {}\nSenha: {}'.format(cad_usuario, cad_senha))
-        break
+        print('Os usuários e as suas respectivas senhas cadastradas são: \n Usuário: {}\nSenha: {}'.format(cad_usuario, cad_senha))  
 
-while opcao != 4:
-
-    if opcao == 2:
+    elif opcao == 2:
         print('Usuários cadastrados: {}'.format(cad_usuario))
-        print('Senhas cadastradas: {}'.format(cad_senha)
+        print('Senhas cadastradas: {}'.format(cad_senha))
     
-    if opcao == 3:
-        while cad_usuario != usuario or cad_senha != senha:
-            print('Dados inválidos, tente novamente.')
-            print('')
-            usuario = input('Digite o seu usuário cadastrado: ')
-            senha = input('Digite a sua senha cadastrada: ')
+    elif opcao == 3:
+        usuario = input('Digite o seu usuário cadastrado: ')
+        senha = input('Digite a sua senha cadastrada: ')
         if cad_usuario == usuario and cad_senha == senha:
             print('Login efetuado com sucesso.')
         else:

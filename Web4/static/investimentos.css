@@ -1,0 +1,10 @@
+body{
+    background: rgb(175, 175, 174);
+}
+.cabecalho{
+    background: rgb(32, 160, 38);
+    border: 1px solid #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    padding: 0em 1em;
+}
